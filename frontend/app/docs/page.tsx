@@ -249,7 +249,7 @@ export default function DocsPage() {
                                 {exploreData.sample_contexts.map((ctx: any, idx: number) => (
                                     <div key={idx} className="border-l-2 border-[#D4A017]/30 pl-3">
                                         <p className="font-sans text-xs text-[#D4A017]/70 mb-1">{ctx.source_path} <span className="opacity-50 mx-1">•</span> Match: {(ctx.score * 100).toFixed(1)}%</p>
-                                        <p className="font-sans text-sm text-[#F2E5C8]/80 leading-relaxed italic">"{ctx.excerpt}"</p>
+                                        <p className="font-sans text-sm text-[#F2E5C8]/80 leading-relaxed italic">&quot;{ctx.excerpt}&quot;</p>
                                     </div>
                                 ))}
                             </div>
